@@ -1,0 +1,26 @@
+{
+  "name": "cli-task-runner",
+  "version": "1.0.0",
+  "description": "Run tasks from a YAML file with dependency resolution and colorful output",
+  "main": "dist/index.js",
+  "bin": {
+    "task-runner": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": ["task-runner", "cli", "yaml", "dependency-graph", "automation"],
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/node": "^20.11.0",
+    "@types/js-yaml": "^4.0.9",
+    "ts-node": "^10.9.2"
+  }
+}
